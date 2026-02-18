@@ -1,2 +1,2 @@
-# soloRush2_MdB_NextJS
-Porting of the initial MdB project on NextJS techno
+# soloRush2_MdB_Hard
+Porting of the initial MdB project with hardcoded datas
