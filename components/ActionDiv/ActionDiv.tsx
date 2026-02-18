@@ -8,9 +8,9 @@ interface ActionDivProps {
 }
 
 function ActionDiv ({}:ActionDivProps){
-    const {life, inventory, comPoints, lastEvent, sandal, setSandal} = useAppContext()
+    const {life, inventory, comPoints, lastEvent} = useAppContext()
     const [inventoryStringArray, setInventoryStringArray]=useState<string[]>([])
-    // const [sandal, setSandal] = useState<boolean>(false)
+    
 
     useEffect(()=>{
         setInventoryStringArray([])
