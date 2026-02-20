@@ -1,4 +1,5 @@
 A quick rework of [SoloRush2](https://github.com/LaurentKatsesSandalman/soloRush2_MdB)
+
 SoloRush2 had been made in less than 2 days (starts at 9am, finishes at 4pm the day after)
 The theme was "the 80's" and I had done a small choose-your-own-adventure book.
 Unfortunately, I couldn't deploy the game at that time.
