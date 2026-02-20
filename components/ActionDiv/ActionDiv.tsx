@@ -1,43 +1,24 @@
-import { useEffect, useState } from "react";
-import { useAppContext } from "../../context/AppContext";
 import styles from "./ActionDiv.module.css";
+import { State } from "@/libs/types/types";
 
 interface ActionDivProps {
-
+state: State
 
 }
 
-function ActionDiv ({}:ActionDivProps){
-    const {life, inventory, comPoints, lastEvent} = useAppContext()
-    const [inventoryStringArray, setInventoryStringArray]=useState<string[]>([])
+export function ActionDiv ({state}:ActionDivProps){
     
-
-    useEffect(()=>{
-        setInventoryStringArray([])
-        console.log("inventory",inventory)
-for (const object of inventory){
-    console.log("i am object",object)
-    fetch(`http://localhost:3310/api/objects/${object}`)
-    .then((response) => response.json())
-    .then((data)=>{
-        setInventoryStringArray((prev)=>[...prev, data.zobject_name as string])
-
-        console.log("inventory string array", inventoryStringArray)
-    })
-    .catch((err) => console.error(err));
-}
-    if(inventory.includes(3)){setSandal(true)}
-    },[inventory])
-
-    const inventoryString = inventoryStringArray.join(", ")
-   
+		const sandal = {
+            code: "SANDALS",
+            name: "Des sandales"
+        }
 
     return (    <div className={styles.actiondiv}>
-                {sandal?(<p>Vie actuelle : {life} (vous portez des sandales)</p>):(<p>Vie actuelle : {life}</p>)}
-                <p>Niveau de communisme : {comPoints}</p>
-                <p>Inventaire : {inventoryString}</p>
-                <p>{lastEvent}</p>
-                {life<1 && <p>Vous êtes mort ! Appuyez sur un bouton</p>}
+                {state.inventory.some((object)=>object.code === sandal.code)?(<p>Vie actuelle : {state.life} (vous portez des sandales)</p>):(<p>Vie actuelle : {state.life}</p>)}
+                <p>Niveau de communisme : {state.comPoints}</p>
+                <p>Inventaire : {state.inventory.map(object => object.name).join(", ")}</p>
+                <p>{state.lastEvent}</p>
+                {state.life<1 && <p>Vous êtes mort ! Appuyez sur un bouton</p>}
             </div>)
 }
 
