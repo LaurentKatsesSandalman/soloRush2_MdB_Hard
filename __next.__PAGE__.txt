@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[69286,["/soloRush2_MdB_Hard/_next/static/chunks/588e8a2b8db9fcee.js"],"GameComponent"]
+3:I[97367,["/soloRush2_MdB_Hard/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/soloRush2_MdB_Hard/_next/static/chunks/ea0f5fcff3072c34.css","style"]
+0:{"buildId":"k8KOZIEYp_dvyKPB47ehf","rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/soloRush2_MdB_Hard/_next/static/chunks/ea0f5fcff3072c34.css","precedence":"next"}],["$","script","script-0",{"src":"/soloRush2_MdB_Hard/_next/static/chunks/588e8a2b8db9fcee.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
