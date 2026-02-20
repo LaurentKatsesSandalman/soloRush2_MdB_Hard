@@ -6,7 +6,7 @@ Unfortunately, I couldn't deploy the game at that time.
 I have reworked the game this week during my free time to hard-code data and replace a huge mess of useStates+context by a global useReducer.
 The game itself is exactly the same
 
-And now you can plait it [here!]() (but only in French, sorry ^^')
+And now you can plait it [here!](https://laurentkatsessandalman.github.io/soloRush2_MdB_Hard/) (but only in French, sorry ^^')
 
 ___
 <p align="left">
