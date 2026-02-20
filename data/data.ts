@@ -107,7 +107,7 @@ export const story1: Chapter[] = [
         chapter_desc:
             "Encore une pièce miteuse. Un homme vous regarde par dessus son journal. Vous vous dites qu'ils se ressemblent tous.",
         exits: [
-            { id: 4, desc: "le trottoir" },
+            { id: 4, desc: "Sortir sur le trottoir" },
             { id: 9, desc: "Prendre l'ascenseur" },
             { id: 29, desc: "Se rapprocher de l'homme" },
         ],

@@ -28,7 +28,7 @@ export function exitReducer (state:State, exitAction:ExitAction){
             code: "SANDALS",
             name: "Des sandales"
         } 
-	if(state.inventory.includes(sandal)){newLife += 10}
+	if(state.inventory.some((objet)=>objet.code===sandal.code)){newLife += 10}
 	const action = exitAction.payload.action
 	if(action)
 	{switch (action.type){
