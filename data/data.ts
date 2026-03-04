@@ -352,6 +352,7 @@ export const story1: Chapter[] = [
             {
                 id: 31,
                 desc: "Poursuivre",
+				contrainte: { maxcom: 1 },
                 action: {
                     type: "GET",
                     payload: {
@@ -360,6 +361,7 @@ export const story1: Chapter[] = [
                     },
                 },
             },
+			{ id: 17, desc: "Se rapprocher du Mur", contrainte: { mincom: 1 }, },
         ],
     },
     {
