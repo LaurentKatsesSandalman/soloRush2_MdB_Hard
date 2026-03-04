@@ -262,7 +262,7 @@ export const story1: Chapter[] = [
                     payload: {
                         code: "ZOMBIE1",
                         name: "une chose humanoïde",
-                        damage: 8,
+                        damage: 12,
                     },
                 },
             },
@@ -300,7 +300,7 @@ export const story1: Chapter[] = [
                     payload: {
                         code: "ZOMBIE1",
                         name: "une chose humanoïde",
-                        damage: 8,
+                        damage: 12,
                     },
                 },
             },
@@ -338,7 +338,7 @@ export const story1: Chapter[] = [
                     payload: {
                         code: "ZOMBIE1",
                         name: "une chose humanoïde",
-                        damage: 8,
+                        damage: 12,
                     },
                 },
             },
@@ -365,11 +365,12 @@ export const story1: Chapter[] = [
     {
         chapter_id: 29,
         chapter_desc:
-            "Lorsque vous vous rapprochez de l'homme, il panique et vous attaque",
+            "Lorsque vous vous rapprochez de l'homme, il panique et vous menace",
         exits: [
             {
                 id: 30,
                 desc: "Se défendre",
+                contrainte: { mincom: 1 },
                 action: {
                     type: "FIGHT",
                     payload: {
@@ -378,6 +379,11 @@ export const story1: Chapter[] = [
                         damage: 10,
                     },
                 },
+            },
+            {
+                id: 4,
+                desc: "Le calmer et sortir doucement sur le trottoir",
+                contrainte: { maxcom: 1 },
             },
         ],
     },
@@ -567,8 +573,7 @@ export const story1_en: Chapter[] = [
     },
     {
         chapter_id: 12,
-        chapter_desc:
-            "The corridor is just as dingy. It leads to three rooms.",
+        chapter_desc: "The corridor is just as dingy. It leads to three rooms.",
         exits: [
             { id: 5, desc: "Enter the room with the blue door" },
             { id: 6, desc: "Enter the room with the white door" },
@@ -785,8 +790,7 @@ export const story1_en: Chapter[] = [
     },
     {
         chapter_id: 29,
-        chapter_desc:
-            "As you approach the man, he panics and attacks you.",
+        chapter_desc: "As you approach the man, he panics and attacks you.",
         exits: [
             {
                 id: 30,
@@ -841,4 +845,3 @@ export const story1_en: Chapter[] = [
         ],
     },
 ];
-
